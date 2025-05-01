@@ -364,6 +364,8 @@ static GOptionEntry entry_options[] = {
 static GOptionEntry file_options[] = {
   { "file", 0, G_OPTION_FLAG_IN_MAIN, G_OPTION_ARG_NONE, &file_mode,
     N_("Display file selection dialog"), NULL },
+  { "file-selection", 0, G_OPTION_FLAG_IN_MAIN, G_OPTION_ARG_NONE, &file_mode,
+    N_("Display file selection dialog"), NULL },
   { "directory", 0, 0, G_OPTION_ARG_NONE, &options.file_data.directory,
     N_("Activate directory-only selection"), NULL },
   { "save", 0, 0, G_OPTION_ARG_NONE, &options.file_data.save,
